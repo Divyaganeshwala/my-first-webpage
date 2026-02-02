@@ -1,0 +1,29 @@
+MY GIT CHEAT SHEET
+
+When I want to save changes to GitHub:
+1. git add .
+2. git commit -m "what I changed"
+3. git push
+
+When starting a new project:
+1. Create folder
+2. Open folder in VS Code
+3. git init
+4. git add .
+5. git commit -m "first commit"
+6. Create repo on GitHub
+7. git remote add origin [URL from GitHub]
+8. git push -u origin main
+
+
+Basic HTML structure:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Paragraph</p>
+</body>
+</html>
