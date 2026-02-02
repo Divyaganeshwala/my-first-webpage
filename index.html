@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            My First Page
-        </title>
+        <title>Counter App</title>
         <style>
-
             body{
                 background-color: #0f0f0f;
                 font-family: Arial;
-                padding: 50px;
-
+                padding: 50px
+                
             }
             h1{
-                color: #333;
+                color:#333;
             }
-            p{
-                color:antiquewhite;
+            #counter{
+                font-size: 72px;
+                color: #4caf50;
+                margin: 30px;
+
             }
             button{
                 background-color: #4caf50;
                 color: white;
-                padding: 10px 30px;
+                padding: 15px 30px;
                 border-radius: 5px;
                 cursor: pointer;
+                margin: 10px;
+                font-size: 18px;
             }
 
             button:hover{
@@ -32,17 +34,27 @@
         </style>
     </head>
     <body>
-        <h1>Hello World</h1>
-        <p>This is my first web page</p>
-        <button onclick="changeText()">
-            Click Me
-        </button>
+
+        <h1>My Counter</h1>
+        <div id="counter">0</div>
+        <button onclick="increment()">ADD 1</button>
+        <button onclick="decrement()">SUBTRACT 1</button>
+        <button onclick="reset()">RESET</button>
         <script>
-            function changeText(){
-                alert("you clicked the button!");
+            let count= 0;
+            function increment(){
+                count+= 1;
+                document.getElementById('counter').textContent= count;
+
+            }
+            function decrement(){
+                count-= 1;
+                document.getElementById('counter').textContent= count;
+            }
+            function reset(){
+                count= 0;
+                document.getElementById('counter').textContent= count;
             }
         </script>
     </body>
-
 </html>
-
